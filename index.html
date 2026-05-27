@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <h1>My Portfolio</h1>
+
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#reflection">Reflection</a></li>
+    <li><a href="#contact">Contact</a></li>
+
+    <!-- DARK MODE BUTTON -->
+    <li>
+        <button id="theme-toggle">🌙</button>
+    </li>
+</ul>
+    </nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+
+    <!-- CONTENT -->
+    <div class="hero-content">
+
+        <img src="images/profile.png" alt="Profile Picture">
+
+        <h2>Pahuay, Carl Japhet B.</h2>
+
+		<p id="typing"></p>
+
+        <a href="#projects" class="btn">View My Projects</a>
+
+    </div>
+
+</section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+
+		<p>
+			I am a BSIT student passionate about web development,
+			UI design, and programming. I enjoy building systems,
+			games, and creative web applications using HTML, CSS,
+			JavaScript, PHP, C#, and Python.
+		</p>
+
+        <div class="skills">
+            <div class="card">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+					<li>C#</li>
+					<li>Python</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Non-Technical Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+	<!-- SKILL PROGRESS BARS -->
+
+<section id="skills" class="progress-section">
+
+			<h2>My Skills</h2>
+
+	<div class="progress-box">
+			<p>HTML</p>
+
+        <div class="progress-bar">
+            <div class="progress html">75%</div>
+        </div>
+	</div>
+
+		<div class="progress-box">
+			<p>CSS</p>
+
+        <div class="progress-bar">
+            <div class="progress css">65%</div>
+        </div>
+    </div>
+
+    <div class="progress-box">
+        <p>JavaScript</p>
+
+        <div class="progress-bar">
+            <div class="progress js">60%</div>
+        </div>
+    </div>
+
+    <div class="progress-box">
+        <p>PHP</p>
+
+        <div class="progress-bar">
+            <div class="progress php">50%</div>
+        </div>
+    </div>
+
+    <div class="progress-box">
+        <p>C#</p>
+
+        <div class="progress-bar">
+            <div class="progress csharp">75%</div>
+        </div>
+    </div>
+	
+	    <div class="progress-box">
+        <p>Python</p>
+
+        <div class="progress-bar">
+            <div class="progress python">65%</div>
+        </div>
+    </div>
+</section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-container">
+
+			<div class="project-card">
+				<img src="images/csharp-project.png" alt="C# Registration System">
+
+				<h3>C# Registration System</h3>
+
+				<p>
+					A desktop application built using C# that manages student registrations and records.
+				</p>
+		
+				<p><strong>Tools:</strong> C#, Windows Forms, SQL</p>
+
+			</div>
+
+            <div class="project-card">
+                <img src="images/project2.png" alt="Calculator">
+
+                <h3>Calculator App</h3>
+
+                <p>
+                    A simple calculator created using JavaScript.
+                </p>
+
+                <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+            </div>
+			
+			<div class="project-card">
+				<img src="images/zombie.png" alt="Web base zombie game">
+
+				<h3>Zombie Shooter Game</h3>
+
+				<p>
+					A web form zombie game develop by me and its still on progress.
+				</p>
+		
+                <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+
+			</div>
+			
+			<div class="project-card">
+				<img src="images/craftist.png" alt="Web base art shop">
+
+				<h3>Craftist Art E-Shop</h3>
+
+				<p>
+					Art shop develop by me and my classmate for mini system.
+				</p>
+		
+                <p><strong>Tools:</strong> HTML, CSS, JavaScript, PHP</p>
+
+			</div>
+			
+						<div class="project-card">
+				<img src="images/Koppiparazzi.png" alt="Koppiparazzi">
+
+				<h3>Koppiparazzi Ordering System</h3>
+
+				<p>
+					Coffee shop develop by me for mini capstone.
+				</p>
+		
+                <p><strong>Tools:</strong> HTML, CSS, JavaScript, PHP</p>
+
+			</div>
+
+        </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <section id="reflection">
+        <h2>Learning Reflection</h2>
+
+		<p>
+			Creating this portfolio helped me improve my frontend
+			development skills, especially in responsive design,
+			animations, and JavaScript interactions. I also learned
+			how important UI/UX is in creating modern websites.
+		</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: pahuay.361634@fairview.sti.edu.ph</p>
+
+<div class="socials">
+
+    <a href="https://www.facebook.com/carl.japhet.rien.pahuay/" target="_blank">
+        <i class="fa-brands fa-facebook"></i> Facebook
+    </a>
+
+    <a href="https://github.com/NexuzCalamity" target="_blank">
+        <i class="fa-brands fa-github"></i> GitHub
+    </a>
+
+    <a href="https://www.instagram.com/hunk0_8/" target="_blank">
+        <i class="fa-brands fa-instagram"></i> Instagram
+    </a>
+
+</div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Pahuay,Carl Japhet B. | Web Systems Portfolio</p>
+    </footer>
+	<button id="topBtn">⬆</button>
+    <script src="script.js"></script>
+</body>
+</html>
