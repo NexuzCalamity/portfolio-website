@@ -519,3 +519,7 @@ body{
 
     cursor:pointer;
 }
+.project-link{
+    text-decoration:none;
+    color:inherit;
+}
