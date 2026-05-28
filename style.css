@@ -571,3 +571,18 @@ body{
 
     display:block;
 }
+/* CAREER OBJECTIVE */
+
+.career-objective{
+    text-align:center;
+
+    max-width:800px;
+
+    margin:20px auto;
+
+    line-height:1.8;
+}
+
+.career-objective h3{
+    margin-bottom:10px;
+}
