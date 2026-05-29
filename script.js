@@ -13,9 +13,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 
 });
-
-// DARK MODE
-
 const themeToggle =
 document.getElementById("theme-toggle");
 
@@ -37,8 +34,6 @@ themeToggle.addEventListener("click", () => {
     }
 
 });
-
-// ACTIVE NAVIGATION
 
 const sections =
 document.querySelectorAll("section");
@@ -88,8 +83,6 @@ window.addEventListener(
     });
 
 });
-
-// TYPING ANIMATION
 
 const typingText = [
 

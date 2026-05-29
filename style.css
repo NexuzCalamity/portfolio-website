@@ -41,7 +41,7 @@ nav ul li a{
 nav ul li a:hover{
     color:#60a5fa;
 }
-/* THEME BUTTON */
+
 
 #theme-toggle{
     background:none;
@@ -62,8 +62,6 @@ nav ul li a:hover{
     transform:scale(1.2);
 }
 
-/* HERO SECTION WITH BANNER */
-
 .hero{
     position:relative;
     height:100vh;
@@ -79,8 +77,6 @@ nav ul li a:hover{
     overflow:hidden;
 }
 
-/* DARK OVERLAY */
-
 .hero::before{
     content:"";
     position:absolute;
@@ -90,9 +86,6 @@ nav ul li a:hover{
     height:100%;
     background:rgba(0,0,0,0.5);
 }
-
-/* HERO CONTENT */
-
 .hero img,
 .hero h2,
 .hero p,
@@ -127,7 +120,6 @@ nav ul li a:hover{
 .card{
     backdrop-filter:blur(10px);
 }
-/* BUTTON */
 
 .btn{
     display:inline-block;
@@ -139,9 +131,6 @@ nav ul li a:hover{
     border-radius:5px;
     transition:0.3s;
 }
-
-/* HOVER EFFECT */
-
 .btn:hover{
     background:#1d4ed8;
 }
@@ -230,8 +219,6 @@ footer{
     padding:20px;
 }
 
-/* TYPING ANIMATION TEXT */
-
 #typing{
     position:relative;
     z-index:2;
@@ -268,7 +255,7 @@ footer{
     }
 
 }
-/* DARK MODE */
+
 
 body.dark-mode{
     background:#0f172a;
@@ -316,7 +303,6 @@ body.dark-mode .socials a{
 .socials a i{
     margin-right:8px;
 }
-/* DARK MODE SOCIAL GLOW */
 
 .socials a:hover{
     background:#3b82f6;
@@ -327,12 +313,11 @@ body.dark-mode .socials a{
         0 0 40px #3b82f6;
     transform:translateY(-5px) scale(1.05);
 }
-/* SOCIAL TEXT COLOR IN DARK MODE */
+
 
 body.dark-mode .socials a{
     color:white;
 }
-/* SMALL PROGRESS BARS */
 
 .progress-section{
     margin-top:40px;
@@ -369,7 +354,6 @@ body.dark-mode .socials a{
     color:white;
 }
 
-/* SKILL COLORS */
 
 .html{
     width:75%;
@@ -401,7 +385,7 @@ body.dark-mode .socials a{
     width:65%;
     background:#50C878;
 }
-/* ANIMATION */
+
 
 .progress{
     transform-origin:left;
@@ -417,7 +401,6 @@ body.dark-mode .socials a{
         transform:scaleX(1);
     }
 }
-/* ACTIVE NAVIGATION */
 
 nav ul li a.active{
     color:#60a5fa;
@@ -508,7 +491,7 @@ body{
 
     display:block;
 }
-/* CAREER OBJECTIVE */
+
 
 .career-objective{
     text-align:center;
@@ -530,7 +513,7 @@ body{
 .about h3{
     margin-bottom:10px;
 }
-/* ABOUT TEXT */
+
 
 #about p{
     text-align:center;
@@ -558,7 +541,7 @@ body{
 footer{
     margin-top:50px;
 }
-/* FIX PROJECT CARD TEXT COLOR */
+
 
 body.dark-mode .project-link{
     color:white;
@@ -568,20 +551,17 @@ body.dark-mode .project-link:visited{
     color:white;
 }
 
-/* REFLECTION SECTION SPACING */
 
 #reflection{
     padding-top:100px;
     padding-bottom:100px;
 }
 
-/* CONTACT SECTION SPACING */
 
 #contact{
     padding-top:80px;
 }
 
-/* SMOOTHER CARD ANIMATION */
 
 .project-card{
     transition:
@@ -589,27 +569,19 @@ body.dark-mode .project-link:visited{
     box-shadow .3s ease;
 }
 
-/* BETTER NAVIGATION HOVER */
 
 nav ul li a:hover{
     color:#60a5fa;
     text-shadow:0 0 10px #60a5fa;
 }
-
-/* PROFILE IMAGE GLOW */
-
 .hero img{
     box-shadow:
     0 0 15px rgba(255,255,255,0.4);
 }
 
-/* DARK MODE TOP BUTTON */
-
 body.dark-mode #topBtn{
     background:#3b82f6;
 }
-
-/* BUTTON GLOW EFFECT */
 
 .btn:hover{
     background:#1d4ed8;
@@ -619,7 +591,6 @@ body.dark-mode #topBtn{
     0 0 20px #3b82f6;
 }
 
-/* PROJECT BUTTON */
 
 .see-more-btn{
     margin:15px;
@@ -641,8 +612,6 @@ body.dark-mode #topBtn{
 
     transform:scale(1.05);
 }
-
-/* MOBILE RESPONSIVE FIX */
 
 @media(max-width:768px){
 
