@@ -538,3 +538,124 @@ body{
     margin:auto;
     line-height:1.7;
 }
+
+#reflection p{
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    line-height:1.8;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 0 20px rgba(59,130,246,0.5);
+}
+
+footer{
+    margin-top:50px;
+}
+/* FIX PROJECT CARD TEXT COLOR */
+
+body.dark-mode .project-link{
+    color:white;
+}
+
+body.dark-mode .project-link:visited{
+    color:white;
+}
+
+/* REFLECTION SECTION SPACING */
+
+#reflection{
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+/* CONTACT SECTION SPACING */
+
+#contact{
+    padding-top:80px;
+}
+
+/* SMOOTHER CARD ANIMATION */
+
+.project-card{
+    transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+/* BETTER NAVIGATION HOVER */
+
+nav ul li a:hover{
+    color:#60a5fa;
+    text-shadow:0 0 10px #60a5fa;
+}
+
+/* PROFILE IMAGE GLOW */
+
+.hero img{
+    box-shadow:
+    0 0 15px rgba(255,255,255,0.4);
+}
+
+/* DARK MODE TOP BUTTON */
+
+body.dark-mode #topBtn{
+    background:#3b82f6;
+}
+
+/* BUTTON GLOW EFFECT */
+
+.btn:hover{
+    background:#1d4ed8;
+
+    box-shadow:
+    0 0 10px #3b82f6,
+    0 0 20px #3b82f6;
+}
+
+/* PROJECT BUTTON */
+
+.see-more-btn{
+    margin:15px;
+    padding:10px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#2563eb;
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.see-more-btn:hover{
+    background:#1d4ed8;
+
+    transform:scale(1.05);
+}
+
+/* MOBILE RESPONSIVE FIX */
+
+@media(max-width:768px){
+
+    .project-card{
+        width:100%;
+    }
+
+    .progress-bar{
+        width:90%;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+}
