@@ -13,10 +13,75 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 
 });
-const themeToggle =
-document.getElementById("theme-toggle");
 
-themeToggle.addEventListener("click", () => {
+
+const sections =
+document.querySelectorAll("section");
+
+const navLinks =
+document.querySelectorAll(
+    "nav ul li a"
+);
+
+window.addEventListener(
+"scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop =
+        section.offsetTop - 200;
+
+        const sectionHeight =
+        section.clientHeight;
+
+        if(
+            window.scrollY >= sectionTop &&
+            window.scrollY <
+            sectionTop + sectionHeight
+        ){
+            current =
+            section.getAttribute("id");
+        }
+
+    });
+
+    if(
+        window.innerHeight + window.scrollY
+        >= document.body.offsetHeight - 5
+    ){
+        current = "contact";
+    }
+
+    navLinks.forEach(link => {
+
+        link.classList.remove(
+            "active"
+        );
+
+        if(
+            link.getAttribute("href")
+            === "#" + current
+        ){
+            link.classList.add(
+                "active"
+            );
+        }
+
+    });
+
+});
+
+
+
+const themeToggle =
+document.getElementById(
+    "theme-toggle"
+);
+
+themeToggle.addEventListener(
+"click", () => {
 
     document.body.classList.toggle(
         "dark-mode"
@@ -35,54 +100,7 @@ themeToggle.addEventListener("click", () => {
 
 });
 
-const sections =
-document.querySelectorAll("section");
 
-const navLinks =
-document.querySelectorAll(
-    "nav ul li a"
-);
-
-window.addEventListener(
-"scroll", () => {
-
-    let current = "";
-
-    sections.forEach(section => {
-
-        const sectionTop =
-        section.offsetTop - 150;
-
-        if(
-            pageYOffset >= sectionTop
-        ){
-            current =
-            section.getAttribute(
-                "id"
-            );
-        }
-
-    });
-
-    navLinks.forEach(link => {
-
-        link.classList.remove(
-            "active"
-        );
-
-        if(
-            link.getAttribute(
-                "href"
-            ) === "#" + current
-        ){
-            link.classList.add(
-                "active"
-            );
-        }
-
-    });
-
-});
 
 const typingText = [
 
@@ -172,6 +190,7 @@ function eraseEffect(){
 }
 
 typeEffect();
+
 const topBtn =
 document.getElementById(
     "topBtn"
